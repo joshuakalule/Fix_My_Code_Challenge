@@ -19,9 +19,12 @@ class Square():
             width: int
             height: int
         """
-
-        self.width = width
-        self.height = height
+        try:
+            self.width = width
+            self.height = height
+        except ValueError as e:
+            self.width = 0
+            self.width = 0
 
     def area_of_my_square(self):
         """
