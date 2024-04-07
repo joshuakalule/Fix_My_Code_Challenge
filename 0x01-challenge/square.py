@@ -20,8 +20,8 @@ class Square():
             height: int
         """
         try:
-            self.width = width
-            self.height = height
+            self.width = int(width)
+            self.height = int(height)
         except ValueError as e:
             self.width = 0
             self.width = 0
